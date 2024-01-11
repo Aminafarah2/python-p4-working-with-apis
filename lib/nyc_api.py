@@ -5,10 +5,10 @@ import json
 class GetPrograms:
 
   def get_programs(self):
-    URL = "http://data.cityofnewyork.us/resource/uvks-tn5n.json"
+    URL = "https://dog.ceo/api/breeds/image/random"
 
     response = requests.get(URL)
-    return response.content
-
+    print(response.content)
+  
 programs = GetPrograms().get_programs()
 print(programs)
